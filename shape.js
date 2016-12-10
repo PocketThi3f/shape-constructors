@@ -1,23 +1,11 @@
+
+
 function Shape() {
 
 	this.get_type = function () {
 
 		return;
 	}
-}
-
-function Square() {
-
-	this.side1
-	this.side2
-	this.side3
-}
-
-function Square() {
-
-	this.side1
-	this.side2
-	this.side3
 }
 
 var Polygon = 
