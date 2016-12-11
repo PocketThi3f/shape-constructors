@@ -1,15 +1,15 @@
-var Shape = require('./shape.js');
+var Shape = require('./Shape.js');
 
 function Square(side1) {
 
-	this.side1,
-	this.side1,
-	this.side1,
-	this.side1
-<<<<<<< HEAD:square.js
-}
-=======
-	this.side2
-	this.side3
-}
->>>>>>> 89f5e602df0787c0a5a3c59fee6ef3511713d0f4:Square.js
+	this.side1 = side1;
+	this.side2 = side1;
+	this.side3 = side1;
+	this.side4 = side1;
+};
+
+Square.prototype = new Shape();
+
+Square.prototype.constructor = 'Square';
+
+module.exports = Square;

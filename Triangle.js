@@ -1,12 +1,14 @@
-var Shape = require('./shape.js');
+var Shape = require('./Shape.js');
 
 function Triangle(side1, side2, side3) {
 
-	this.side1,
-	this.side2,
-	this.side3
-<<<<<<< HEAD:triangle.js
+	this.side1 = side1;
+	this.side2 = side2;
+	this.side3 = side3;
 };
-=======
-}
->>>>>>> 89f5e602df0787c0a5a3c59fee6ef3511713d0f4:Triangle.js
+
+Triangle.prototype = Object.create(Shape.prototype);
+
+Triangle.prototype.constructor = 'Triangle';
+
+module.exports = Triangle;

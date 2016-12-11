@@ -1,9 +1,9 @@
 'use strict';
 
-var Shape = require('./shape.js'),
-    Triangle = require('./triangle.js'),
-    Square = require('./square.js'),
-    Pentagon = require('./pentagon.js');
+var Shape = require('./Shape.js'),
+    Triangle = require('./Triangle.js'),
+    Square = require('./Square.js'),
+    Pentagon = require('./Pentagon.js');
 
 // Let's give it a whirl...
 var triangle = new Triangle(1, 2, 3);

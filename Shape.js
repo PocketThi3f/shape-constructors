@@ -1,19 +1,17 @@
 'use strict';
 
-function Shape(type) {
-	this.type = type;
+// A standard constructor function.
+function Shape () {
+  this.type = "shape";
 }
 
+// Attaching a prototype function.
 Shape.prototype.get_type = function () {
-	return this.type;
+    return this.constructor;
 };
 
-var triangle = new Triangle(1, 2, 3);
-var square = new Square(4);
-var pentagon = new Pentagon(1, 2, 3, 4, 5);
-var shape = new Shape();
+module.exports = Shape;
 
-module.exports = Square;
 //	Reference: Shapes Construct
 //================================================
 // 'use strict';
