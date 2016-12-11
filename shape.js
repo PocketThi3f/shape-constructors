@@ -1,25 +1,27 @@
+'use strict';
 
-
-function Shape() {
-
-	this.get_type = function () {
-
-		return;
-	}
+function Shape(type) {
+	this.type = type;
 }
 
-var Polygon = 
+Shape.prototype.get_type = function () {
+	return this.type;
+};
 
-Triangle.prototype = new Shape();
+var triangle = new Triangle(1, 2, 3);
+var square = new Square(4);
+var pentagon = new Pentagon(1, 2, 3, 4, 5);
+var shape = new Shape();
 
+module.exports = Square;
 //	Reference: Shapes Construct
 //================================================
 // 'use strict';
 
-// var Shape = require('./Shape.js'),
-//     Triangle = require('./Triangle.js'),
-//     Square = require('./Square.js'),
-//     Pentagon = require('./Pentagon.js');
+// var Shape = require('./shape.js'),
+//     Triangle = require('./triangle.js'),
+//     Square = require('./square.js'),
+//     Pentagon = require('./pentagon.js');
 
 // // Let's give it a whirl...
 // var triangle = new Triangle(1, 2, 3);
@@ -40,3 +42,4 @@ Triangle.prototype = new Shape();
 // console.log(square instanceof Square);
 // console.log(pentagon instanceof Pentagon);
 // console.log(shape instanceof Shape);
+

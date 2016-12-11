@@ -1,8 +1,9 @@
+var Shape = require('./shape.js');
 
+function Square(side1) {
 
-function Square() {
-
+	this.side1,
+	this.side1,
+	this.side1,
 	this.side1
-	this.side2
-	this.side3
 }
