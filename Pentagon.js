@@ -11,6 +11,6 @@ function Pentagon(side1, side2, side3, side4, side5) {
 
 Pentagon.prototype = new Shape();
 
-Pentagon.prototype.constructor = 'Pentagon';
+Pentagon.prototype.constructor = Pentagon;
 
 module.exports = Pentagon;
