@@ -10,6 +10,6 @@ function Square(side1) {
 
 Square.prototype = new Shape();
 
-Square.prototype.constructor = 'Square';
+Square.prototype.constructor = Square;
 
 module.exports = Square;
